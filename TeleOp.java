@@ -1,5 +1,6 @@
 import org.firstinspires.ftc.teamcode.MainMethods;
 
+@TeleOp(name="TeleOp", group="concept")
 public class TeleOp extends MainMethods {
     @Override public void runOpMode() throws InterruptedException {
         InitializeRobot();

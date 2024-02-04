@@ -41,5 +41,11 @@ public class MainMethods extends LinearOpMode {
         telemetry.update();        
 
     }
+
+    double getAngle() {
+        YawPitchRollAngles orientation = imu.getRobotYawPitchRollAngles();
+        return orientation.getYaw(AngleUnit.DEGREES);
+    }
             
+    InitializeRobot();
 }
